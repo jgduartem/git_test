@@ -1,0 +1,1 @@
+This is the Jose Duarte first git project!
