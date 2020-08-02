@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pagina de prueba</title>
-</head>
-<body>
-	<img src="test_image.jpg" alt="imagen de prueba">
-	<h1>Titulo del parrafo</h1>
-	<h2>Subtitulos</h2>
-	<h3>Escrito Escrito Escrito Escrito Escrito Escrito Escrito Escrito
-		Escrito Escrito Escrito Escrito Escrito Escrito Escrito Escrito
-	Escrito Escrito Escrito Escrito Escrito Escrito Escrito Escrito</h3>
+	<head>
+		<title>DuarteFX</title>
+
+	</head>
+<style>
+	.white-text{
+		font-size: 16px;
+		font-family: monospace;
+		color: white;
+	}
+
+	h1{
+		margin-left: 600px;
+		font-family: monospace;
+		font-size: 32px;
+		color: white;
+	}
+
+	div{
+		background: rgb(0, 0, 0, 0.3);
+
+	}
+</style>
+
+<body background="trading-image.jpeg">
+	<div>
+	<h1>DuarteFX</h1>
+	<h2 class="white-text">¿Que es el trading?</h2>
+	<h3 class="white-text">Trading es comprar barato y vender caro</h3>
+	<p class="white-text">Si estas interesado en aprender deja tu correo y recibiras toda la información</p>
+</div>
+
+	<!-- añadimos boton de enviar -->
 
 	<form action="#">
-	<h4>Name:
-	<input type="text" placeholder="input your full name" required>
-	<button type="submit">submit name</button><br></h4>
-	<h4>Sex:
-	<label for="Male"><input id="male" type="radio" value="male" name="genere" checked>Male</label>
-	<label for="Female"><input id="female" type="radio" value="female" name="genere">Female</label></h4>
+		<div>
+		<input type="text" placeholder="Introduce tu correo" required>
+		<button type="submit">Enviar</button><br>
 
-	<!-- añadimos checkbuttons -->
-
-	<label for="Musica"><input id="Musica" type="checkbox" value="musica" name="interest">Musica</label>
-
-
-</form>
-
-
+	<!-- añadimos checkbuttons de posibles estrategias -->
+	<p class="white-text"> Marco temporal: </p> 
+	<label for="scalping" class="white-text"><input id="scalping" type="checkbox" value="scalping">Scalping</label>
+	<label for="intraday" class="white-text"><input id="intraday" type="checkbox" value="intraday">Intraday</label>
+	<label for="swing" class="white-text"><input id="swing" type="checkbox" value="swing">Swing</label><br>
+</div>
+		
+	</form>
 
 </body>
+
+
 </html>
